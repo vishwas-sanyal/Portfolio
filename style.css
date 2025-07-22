@@ -79,6 +79,7 @@ body::-webkit-scrollbar {
     border: 0px;
     font-size: 19px;
     box-shadow: rgba(142, 142, 142, 0.25) 0px 0px 9px 7px;
+    transition: all 1s;
 }
 
 .hero-image .profile-pic-placeholder {
@@ -280,31 +281,58 @@ body::-webkit-scrollbar {
 
 @media(max-width:550px) {
     .navbar .nav-links {
-        padding: 30px 10px;
+        padding: 25px 10px;
         font-size: 20px;
-        border-radius: 10px;
+        border-radius: 0px;
         position: sticky;
         margin-top: -10px;
+        gap: 1rem;
+        margin-bottom: -30px;
     }
 
     .hero {
         flex-direction: column;
         text-align: center;
         gap: 3rem;
+        margin-bottom: -30px;
+    }
+
+    .about-skills {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box {
+        width: 100%;
+        margin-top: 2rem;
     }
 
     .skills-container {
         display: grid;
-        gap: 50px;
+        gap: 20px;
     }
 
     .project-card {
         width: 45%;
-        height: 470px;
+        height: 220px;
+        font-size: 15px;
+    }
+
+    .project-card p {
+        display: none;
+    }
+
+    .project-card img {
+        width: 90%;
+        height: 100px;
     }
 
     .project-list {
-        gap: 3rem;
+        gap: 1.5rem;
+    }
+
+    .sendBtn {
+        margin-left: 9rem;
     }
 
     .hero {
@@ -312,6 +340,27 @@ body::-webkit-scrollbar {
     }
 
     .social-icons {
-        gap: 15px;
+        gap: 4.5rem;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info h2 {
+        font-size: 45px;
+    }
+
+    .footer-bar {
+        margin-bottom: -10px;
     }
 }
